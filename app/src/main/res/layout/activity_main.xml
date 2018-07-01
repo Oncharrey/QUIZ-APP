@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+       <ImageView
+           android:id="@+id/header"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:src="@drawable/header"
+           android:scaleType="fitStart"/>
+
+        <TextView
+            android:id="@+id/challengeX"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CHALLENGE X"
+            android:textSize="42sp"
+            android:textColor="#af0606"
+            android:background="#fff"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/header"
+            android:layout_marginTop="-130dp"/>
+
+        <TextView
+            android:id="@+id/chooseTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose topic" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_below="@id/challengeX">
+
+        <TextView
+            android:id="@+id/Q1"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/challengeX"
+            android:text="Q1. Which global tournament is currently taking place in Russia?"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/Q1">
+            <RadioButton
+                android:id="@+id/fifaWorldCup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fifaWorldCup"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/hsbcSevens"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hsbcSevens"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/Q2"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/a"
+            android:text="Q2. Who are the defending champions in the tournament above?"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/Q2">
+            <RadioButton
+                android:id="@+id/Germany"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Germany"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/Spain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spain"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/Q3"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/b"
+            android:text="Q3. What is the price of the tournament?"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/Q3">
+            <RadioButton
+                android:id="@+id/price1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$150 million"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/price2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$38 million"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/price3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$8 million"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/price4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No tournament price"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/Q4"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/c"
+            android:text="Q4. Which body governs the tournament?"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/Q4">
+            <RadioButton
+                android:id="@+id/fifa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FIFA"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/irb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IRB"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
