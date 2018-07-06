@@ -45,99 +45,111 @@
         <TextView
             android:id="@+id/Q1"
             android:layout_marginTop="16dp"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/challengeX"
-            android:text="Q1. Which global tournament is currently taking place in Russia?"
+            android:background="#fff"
+            android:padding="10dp"
+            android:text="Q1. Who invented the first computer?"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <RadioGroup
             android:id="@+id/a"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_below="@id/Q1">
+            android:layout_below="@id/Q1"
+            android:background="#fff"
+            android:padding="10dp">
             <RadioButton
-                android:id="@+id/fifaWorldCup"
+                android:id="@+id/inventor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/fifaWorldCup"
+                android:text="Charles Babbage"
                 android:textAppearance="?android:textAppearanceMedium" />
             <RadioButton
-                android:id="@+id/hsbcSevens"
+                android:id="@+id/inventor2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/hsbcSevens"
+                android:text="Tim Warner"
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
 
         <TextView
             android:id="@+id/Q2"
             android:layout_marginTop="16dp"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/a"
-            android:text="Q2. Who are the defending champions in the tournament above?"
+            android:background="#fff"
+            android:padding="10dp"
+            android:text="Q2. What technology did the first computer use?"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <RadioGroup
             android:id="@+id/b"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_below="@id/Q2">
+            android:layout_below="@id/Q2"
+            android:background="#fff"
+            android:padding="10dp">
             <RadioButton
-                android:id="@+id/Germany"
+                android:id="@+id/tech"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Germany"
+                android:text="Thermionic valves"
                 android:textAppearance="?android:textAppearanceMedium" />
             <RadioButton
-                android:id="@+id/Spain"
+                android:id="@+id/tech2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Spain"
+                android:text="Transistors"
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
 
         <TextView
             android:id="@+id/Q3"
             android:layout_marginTop="16dp"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/b"
-            android:text="Q3. What is the price of the tournament?"
+            android:background="#fff"
+            android:padding="10dp"
+            android:text="Q3. How any generations of computers have been there to this date?"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <RadioGroup
             android:id="@+id/c"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_below="@id/Q3">
+            android:layout_below="@id/Q3"
+            android:background="#fff"
+            android:padding="10dp">
             <RadioButton
-                android:id="@+id/price1"
+                android:id="@+id/gen1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$150 million"
+                android:text="two"
                 android:textAppearance="?android:textAppearanceMedium" />
             <RadioButton
-                android:id="@+id/price2"
+                android:id="@+id/gen2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$38 million"
+                android:text="three"
                 android:textAppearance="?android:textAppearanceMedium" />
             <RadioButton
-                android:id="@+id/price3"
+                android:id="@+id/gen3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="$8 million"
+                android:text="four"
                 android:textAppearance="?android:textAppearanceMedium" />
             <RadioButton
                 android:id="@+id/price4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="No tournament price"
+                android:text="five"
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
 
@@ -145,31 +157,46 @@
         <TextView
             android:id="@+id/Q4"
             android:layout_marginTop="16dp"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/c"
-            android:text="Q4. Which body governs the tournament?"
+            android:background="#fff"
+            android:padding="10dp"
+            android:text="Q4. Which corporation built the first personal computer?"
             android:textAppearance="?android:textAppearanceMedium" />
 
         <RadioGroup
             android:id="@+id/d"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:layout_below="@id/Q4">
+            android:layout_below="@id/Q4"
+            android:background="#fff"
+            android:padding="10dp">
             <RadioButton
-                android:id="@+id/fifa"
+                android:id="@+id/ibm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="FIFA"
+                android:text="IBM corporation"
                 android:textAppearance="?android:textAppearanceMedium" />
             <RadioButton
-                android:id="@+id/irb"
+                android:id="@+id/microsoft"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="IRB"
+                android:text="Microsoft corporation"
+                android:textAppearance="?android:textAppearanceMedium" />
+            <RadioButton
+                android:id="@+id/apple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple inc."
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
 
     </RelativeLayout>
 
